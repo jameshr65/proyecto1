@@ -61,7 +61,7 @@ public class UsuarioController {
 	public String elimnarPorId(@PathVariable("id") Long id) {
 		boolean ok = this.usuarioService.eliminarUsuario(id);
 		if (ok) {
-			return "Se elimino el usuario con id " + id;
+			return "Se elimino con exito el usuario con id " + id;
 		}else {
 				return "No pudo eliminar el usuario con id " + id;
 		}	
